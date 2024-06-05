@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="user-info">
+            <span style="color: #8b8b8dfb">Имя Фамилия</span>
+        </div>
+        <div class="contact-info">
+            <span style="color: #350cc9">8 800 800-08-08</span>
+            <span class="logout">Выход</span>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="main.html" style="color: #8b8b8dfb;font-weight: bold;">Домой</a></li>
+            <li><a href="kreditPage.html" style="color: #350cc9;font-weight: bold">Кредиты</a></li>
+            <li><a href="#"style="color: #8b8b8dfb;font-weight: bold">Сервисы</a></li>
+        </ul>
+    </nav>
+    <main class="kreditform">
+        <form onsubmit="event.preventDefault(); document.getElementById('modal-toggle').click();">
+            <div class="form-group">
+                <label for="sum">Сумма<span class="required">*</span></label>
+                <input type="text" id="sum" name="sum" placeholder="Введите сумму"required>
+            </div>
+            <div class="form-group">
+                <label for="term">Срок<span class="required">*</span></label>
+                <input type="text" id="term" name="term" placeholder="Введите срок"required>
+            </div>
+            <div class="form-group">
+                <label for="income">Ежемесячный доход<span class="required">*</span></label>
+                <input type="text" id="income" name="income" placeholder="Введите доход"required>
+            </div>
+            <div class="form-group">
+                <label for="address">Адрес регистрации<span class="required">*</span></label>
+                <input type="text" id="address" name="address" placeholder="Введите адрес"required>
+            </div>
+            <div class="form-group">
+                <label for="work">Место работы<span class="required">*</span></label>
+                <input type="text" id="work" name="work" placeholder="Введите наименование организации" required>
+                <span class="required" style = "font-size: 13px;">*обязательно для заполнения</span>
+            </div>
+            
+            <div class="cbform-group">
+                <input type="checkbox" id="data-processing" name="data-processing" required>
+                <label for="data-processing">согласен на обработку персональных данных<span class="required">*</span></label>
+            </div>
+            <div class="cbform-group">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">согласен на рассылку</label>
+            </div>
+            <div class="actions">
+            <button type="submit" for="modal-toggle" class="open-modal" style="color: white;background-color: #350cc9;margin-top: 40px;">Оформить</button>
+            </div>
+        </form>
+        <input type="checkbox" id="modal-toggle" class="modal-toggle">
+        <div class="modal">
+            <label for="modal-toggle" class="modal-background"></label>
+            <div class="modal-content">
+                <label for="modal-toggle" class="close">&times;</label>
+                <div class="modal-message">
+                    <img src="/images/confirmImage.png"  style="padding-right: 20px;" alt="imag">
+                    <p>Заявка оформлена<br>Банк рассмотрит заявление в течение 1 рабочего дня</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,296 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.user-info {
+    font-size: 14px;
+}
+
+.contact-info {
+    font-size: 14px;
+}
+
+.logout {
+    margin-left: 5px;
+    cursor: pointer;
+    color: #8b8b8dfb;
+    background: url(logoutImage.png) left no-repeat transparent; 
+    padding-left: 30px;
+    height: 40px;
+}
+
+nav {
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 13px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.credit {
+    margin-bottom: 20px;
+}
+
+.credit button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.balance-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #6200ea;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+    margin-right: 60px;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+}
+.balancetext{
+    font-style:italic;
+    opacity: 0.4;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.balance {
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.card-number {
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.expiry {
+    font-size: 12px;
+    margin-top: 140px;
+    margin-left: 50px;
+}
+
+.card-logo {
+    align-self: flex-start;
+    width: 100px;
+}
+
+.card-logo img {
+    width: 100px;
+}
+
+.illustration img {
+    width: 600px;
+    margin-left: 140px;
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    margin-right: 610px;
+    
+}
+.button{
+    display: flex;
+    margin-left: auto;
+    background-color: #350cc9;
+    padding: 10px 40px;
+    border: 1px solid #4c00ff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.actions button {
+    background-color: #fff;
+    color: #350cc9;
+    border: 1px solid #350cc9;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 80px;
+    width: 200px;
+    height: 45px;
+    
+}
+
+.kreditform{
+    background-color: rgb(245, 241, 241);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+   
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.cbform-group{
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+input[type="checkbox"] {
+    margin-bottom: 9px;
+    border: #350cc9;
+    margin-right: 10px;
+}
+.required {
+    color: red;
+}
+label {
+    color: #b2b2b6fb;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+::placeholder{
+    color: #8b8b8dfb;
+    font-size: 18px;
+}
+
+.open-modal {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Hide the modal checkbox */
+.modal-toggle {
+    display: none;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    display: flex;
+    font-weight: bold;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    text-align: left;
+    border-radius: 50px;
+    position: relative;
+    color: #350cc9;
+}
+
+.modal-message {
+    display: flex;
+    flex-direction: stretch;
+    align-items: center;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.modal-toggle:checked + .modal {
+    display: block;
+}
