@@ -18,18 +18,44 @@ header {
 .user-info {
     font-size: 14px;
 }
+.user-info::before{
+    background: url("../images/userNameImage.png") no-repeat transparent;
+    background-size: 25px 23px;
+    display: inline-flex;
+    align-items: center;
+    width: 24px;
+    height: 32px;
+    content: "";  
+}
 
 .contact-info {
     font-size: 14px;
+}
+.contact-info::before{
+    background: url("../images/phoneNumberImage.png") no-repeat transparent;
+    background-size: 25px 23px;
+    display: inline-flex;
+    align-items: center;
+    width: 24px;
+    height: 32px;
+    content: "";  
 }
 
 .logout {
     margin-left: 5px;
     cursor: pointer;
     color: #8b8b8dfb;
-    background: url(logoutImage.png) left no-repeat transparent; 
     padding-left: 30px;
-    height: 40px;
+    height: fit-content;
+}
+.logout::before{
+    background: url("../images/logoutImage.png") no-repeat transparent;
+    background-size: 15px 23px;
+    display: inline-flex;
+    align-items: center;
+    width: 15px;
+    height: 32px;
+    content: "";  
 }
 
 nav {
@@ -235,12 +261,10 @@ label {
     text-align: center;
 }
 
-/* Hide the modal checkbox */
 .modal-toggle {
     display: none;
 }
 
-/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
